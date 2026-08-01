@@ -1,0 +1,15 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: scaleio.com
+  https: false
+domains:
+- domain: scaleio.com
+  dnssec: false
+  caa:
+  - 0 issue "digicert.com; account=b34fd286db03ccad020f0a75010dd75544eaf2b967195b4becb6460c924d35c9"
+  - 0 iodef "mailto:pkiadmin@dell.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

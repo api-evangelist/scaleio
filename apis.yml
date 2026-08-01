@@ -1,8 +1,23 @@
 aid: scaleio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scaleio.png
 name: Scaleio
-description: 'Scaleio is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'ScaleIO was a software-defined block storage startup (an early Norwest Venture
+  Partners investment) that was acquired by EMC in 2013 and folded into Dell EMC as ScaleIO,
+  later renamed VxFlex OS and then PowerFlex. It is no longer an independent company: the
+  scaleio.com domain is Dell-managed and 301-redirects to the Dell EMC software-defined
+  storage product page, and there is no independent developer portal, API, or SDK surface
+  under this brand. Any current API surface lives under Dell PowerFlex, not scaleio.com.'
 url: https://raw.githubusercontent.com/api-evangelist/scaleio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +25,21 @@ x-backed-by:
 - norwest-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: dell-emc
+x-note: 'scaleio.com HTTP 301-redirects to www.dellemc.com software-defined-storage; domain
+  CAA/DMARC are Dell-managed (pkiadmin@dell.com). No independent API surface. Product now
+  Dell PowerFlex (formerly VxFlex OS / ScaleIO).'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Unknown
+- Storage
+- Software-Defined Storage
+- Block Storage
+- Dell EMC
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/scaleio-domain-security.yml
 - type: Website
   url: https://scaleio.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
