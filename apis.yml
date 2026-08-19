@@ -30,7 +30,7 @@ x-acquired-by: dell-emc
 x-note: 'scaleio.com HTTP 301-redirects to www.dellemc.com software-defined-storage; domain
   CAA/DMARC are Dell-managed (pkiadmin@dell.com). No independent API surface. Product now
   Dell PowerFlex (formerly VxFlex OS / ScaleIO).'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
